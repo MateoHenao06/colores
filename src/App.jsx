@@ -12,9 +12,22 @@ export default function App() {
   const [intervalId, setIntervalId] = useState(null);
 
   const coloresAbsolutos = [
-    "#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF", 
-    "#000000", "#FFFFFF", "#808080", "#800000", "#808000", "#800080", 
-    "#008080", "#C0C0C0", "#FFA500", "#A52A2A"
+    "#FF0000", 
+    "#00FF00", 
+    "#0000FF", 
+    "#FFFF00", 
+    "#FF00FF", 
+    "#00FFFF", 
+    "#000000", 
+    "#FFFFFF", 
+    "#808080", 
+    "#800000", 
+    "#808000", 
+    "#800080", 
+    "#008080", 
+    "#C0C0C0", 
+    "#FFA500", 
+    "#A52A2A"
   ];
 
   const toggleDarkMode = () => {
@@ -59,10 +72,10 @@ export default function App() {
 
         <div className="flex space-x-4 mb-4">
           <button onClick={() => setLikes(likes + 1)} className="px-4 py-2 bg-green-500 text-white rounded-lg shadow-lg hover:bg-blue-400">
-            👍 Like ({likes})
+            👍({likes})
           </button>
           <button onClick={() => setDislikes(dislikes + 1)} className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-blue-400">
-            👎 Dislike ({dislikes})
+            👎({dislikes})
           </button>
         </div>
 
